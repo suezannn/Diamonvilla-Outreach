@@ -1,0 +1,12 @@
+{
+  "name": "diamondvilla-outreach",
+  "version": "1.0.0",
+  "description": "Diamondvilla Outreach Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
