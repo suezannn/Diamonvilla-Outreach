@@ -204,40 +204,94 @@
             </div>
           </div>
           
-          <div class="grid md:grid-cols-2 gap-10">
-            <div class="bg-white border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
-              <div class="p-12">
-                <div class="text-[10px] font-extrabold text-accent mb-6 uppercase tracking-widest">SaaS / Growth Agency</div>
-                <h4 class="text-2xl font-bold text-primary mb-6 leading-tight group-hover:text-accent transition-colors">Infrastructure scaling to 45+ qualified meetings/mo</h4>
-                <p class="text-foreground/60 leading-relaxed mb-10">Restructured a burned domain setup into a 15-domain sharded infrastructure. Achieved 82% open rates and primary inbox placement within 14 days.</p>
-                <div class="grid grid-cols-2 gap-10 pt-10 border-t border-border">
-                  <div class="space-y-1">
-                    <div class="text-4xl font-extrabold text-primary tracking-tight">45+</div>
-                    <div class="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Monthly Meetings</div>
-                  </div>
-                  <div class="space-y-1">
-                    <div class="text-4xl font-extrabold text-primary tracking-tight">14d</div>
-                    <div class="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Implementation Time</div>
-                  </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project Card 1 -->
+            <div class="bg-white border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group flex flex-col h-full">
+              <div class="relative aspect-[16/10] overflow-hidden">
+                <img src="/assets/project-1.jpg" alt="Infrastructure Scaling" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+                <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest">
+                  Infrastructure
                 </div>
               </div>
-            </div>
-            
-            <div class="bg-white border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
-              <div class="p-12">
-                <div class="text-[10px] font-extrabold text-accent mb-6 uppercase tracking-widest">B2B Service Provider</div>
-                <h4 class="text-2xl font-bold text-primary mb-6 leading-tight group-hover:text-accent transition-colors">$1.2M pipeline generated from zero outbound presence</h4>
-                <p class="text-foreground/60 leading-relaxed mb-10">Built the outbound engine from scratch for a new service offering. Focused on high-intent data and personalized technical sequencing.</p>
-                <div class="grid grid-cols-2 gap-10 pt-10 border-t border-border">
-                  <div class="space-y-1">
-                    <div class="text-4xl font-extrabold text-primary tracking-tight">$1.2M</div>
-                    <div class="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Pipeline Value</div>
-                  </div>
-                  <div class="space-y-1">
-                    <div class="text-4xl font-extrabold text-primary tracking-tight">18.4%</div>
-                    <div class="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Reply Rate</div>
+              <div class="p-8 flex flex-col flex-1">
+                <div class="text-[10px] font-extrabold text-accent mb-2 uppercase tracking-widest">SaaS / Growth Agency</div>
+                <h4 class="text-xl font-bold text-primary mb-3 leading-tight group-hover:text-accent transition-colors">Infrastructure scaling to 45+ qualified meetings/mo</h4>
+                <p class="text-sm text-foreground/60 leading-relaxed mb-6 flex-1">Restructured a burned domain setup into a 15-domain sharded infrastructure. Achieved 82% open rates and primary inbox placement.</p>
+                
+                <div class="bg-muted/50 rounded-2xl p-4 mb-6 border border-border/50">
+                  <div class="flex items-center gap-3">
+                    <iconify-icon icon="lucide:trending-up" class="text-accent text-lg"></iconify-icon>
+                    <div>
+                      <div class="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Key Result</div>
+                      <div class="text-sm font-bold text-primary">82% Open Rate sustained for 6 months</div>
+                    </div>
                   </div>
                 </div>
+
+                <a href="#contact" class="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:text-accent transition-colors uppercase tracking-widest">
+                  View Project 
+                  <iconify-icon icon="lucide:arrow-right" class="transition-transform group-hover:translate-x-1"></iconify-icon>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="bg-white border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group flex flex-col h-full">
+              <div class="relative aspect-[16/10] overflow-hidden">
+                <img src="/assets/project-2.jpg" alt="Pipeline Generation" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+                <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest">
+                  Growth Systems
+                </div>
+              </div>
+              <div class="p-8 flex flex-col flex-1">
+                <div class="text-[10px] font-extrabold text-accent mb-2 uppercase tracking-widest">B2B Service Provider</div>
+                <h4 class="text-xl font-bold text-primary mb-3 leading-tight group-hover:text-accent transition-colors">$1.2M pipeline generated from zero outbound</h4>
+                <p class="text-sm text-foreground/60 leading-relaxed mb-6 flex-1">Built the outbound engine from scratch for a new service offering. Focused on high-intent data and personalized technical sequencing.</p>
+                
+                <div class="bg-muted/50 rounded-2xl p-4 mb-6 border border-border/50">
+                  <div class="flex items-center gap-3">
+                    <iconify-icon icon="lucide:check-circle-2" class="text-accent text-lg"></iconify-icon>
+                    <div>
+                      <div class="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Key Result</div>
+                      <div class="text-sm font-bold text-primary">18.4% Reply Rate on first touch</div>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#contact" class="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:text-accent transition-colors uppercase tracking-widest">
+                  See Case Study 
+                  <iconify-icon icon="lucide:arrow-right" class="transition-transform group-hover:translate-x-1"></iconify-icon>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="bg-white border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group flex flex-col h-full">
+              <div class="relative aspect-[16/10] overflow-hidden">
+                <img src="/assets/project-3.jpg" alt="Data Intelligence" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+                <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest">
+                  Lead Intel
+                </div>
+              </div>
+              <div class="p-8 flex flex-col flex-1">
+                <div class="text-[10px] font-extrabold text-accent mb-2 uppercase tracking-widest">FinTech SaaS</div>
+                <h4 class="text-xl font-bold text-primary mb-3 leading-tight group-hover:text-accent transition-colors">Precision targeting for SaaS series B startup</h4>
+                <p class="text-sm text-foreground/60 leading-relaxed mb-6 flex-1">Implemented an intent-based scraping system that identified companies recently changing their tech stack.</p>
+                
+                <div class="bg-muted/50 rounded-2xl p-4 mb-6 border border-border/50">
+                  <div class="flex items-center gap-3">
+                    <iconify-icon icon="lucide:zap" class="text-accent text-lg"></iconify-icon>
+                    <div>
+                      <div class="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Key Result</div>
+                      <div class="text-sm font-bold text-primary">3.2x ROI within first 90 days</div>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#contact" class="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:text-accent transition-colors uppercase tracking-widest">
+                  View Project 
+                  <iconify-icon icon="lucide:arrow-right" class="transition-transform group-hover:translate-x-1"></iconify-icon>
+                </a>
               </div>
             </div>
           </div>
@@ -269,6 +323,18 @@
                 <div>
                   <div class="font-bold text-primary text-lg">Strategic Roadmap</div>
                   <p class="text-sm text-foreground/60 mt-1">Receive a step-by-step plan to scale your outbound without risk.</p>
+                </div>
+              </div>
+              <div class="flex gap-6 items-start pt-8 border-t border-border">
+                <div class="w-14 h-14 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center shrink-0">
+                  <iconify-icon icon="lucide:send" class="text-accent text-2xl"></iconify-icon>
+                </div>
+                <div>
+                  <div class="font-bold text-primary text-lg">Direct Inquiry</div>
+                  <a href="mailto:DIAMONDVILLA25@GMAIL.COM" class="text-xl font-extrabold text-accent hover:text-primary transition-colors decoration-accent/30 underline-offset-4 hover:underline">
+                    DIAMONDVILLA25@GMAIL.COM
+                  </a>
+                  <p class="text-[10px] font-bold text-foreground/40 uppercase tracking-[0.2em] mt-2">Personalized response within 24 hours</p>
                 </div>
               </div>
             </div>
