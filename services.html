@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | DiamondVilla B2B Outreach Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <style type="text/tailwindcss">
+      @import "tailwindcss";
+      @theme inline {
+        --color-background: var(--background);
+        --color-foreground: var(--foreground);
+        --color-primary: var(--primary);
+        --color-accent: var(--accent);
+        --color-muted: var(--muted);
+        --color-border: var(--border);
+        --font-family-sans: 'Plus Jakarta Sans', sans-serif;
+      }
+      :root {
+        --primary: #0B2D5C;
+        --accent: #D4A017;
+        --background: #FFFFFF;
+        --muted: #F5F5F5;
+        --foreground: #2B2B2B;
+        --border: #E2E8F0;
+      }
+    </style>
+  </head>
+  <body class="bg-background font-sans text-foreground selection:bg-accent/30">
+    <div class="min-h-screen flex flex-col relative">
+      <!-- Navigation -->
+      <nav class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+          <a href="index.html#home" class="flex items-center gap-3">
+            <img src="/assets/logo.png" alt="DiamondVilla Logo" class="h-9 w-auto object-contain">
+            <span class="text-xl font-bold tracking-tight text-primary uppercase hidden sm:block">DiamondVilla</span>
+          </a>
+          <div class="hidden md:flex items-center gap-10 text-sm font-semibold">
+            <a href="index.html#home" class="text-primary hover:text-accent transition-colors">Home</a>
+            <a href="index.html#about" class="text-primary hover:text-accent transition-colors">About Us</a>
+            <a href="services.html" class="text-accent transition-colors">Services</a>
+            <a href="projects.html" class="text-primary hover:text-accent transition-colors">Projects</a>
+            <a href="index.html#contact" class="text-primary hover:text-accent transition-colors">Contact Us</a>
+            <a href="index.html#contact" class="bg-primary text-white px-6 py-3 rounded hover:shadow-lg hover:shadow-primary/20 transition-all">Get Free Audit</a>
+          </div>
+          <button class="md:hidden text-primary">
+            <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Services Header -->
+      <section class="pt-32 pb-20 bg-primary text-white overflow-hidden relative">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,var(--color-accent)_0%,transparent_70%)]"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+          <h2 class="text-sm font-bold text-accent uppercase tracking-[0.2em] mb-4">The Outreach Engine</h2>
+          <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-8">
+            Managed Outreach Infrastructure
+          </h1>
+          <p class="text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
+            We build and manage the technical systems that power high-volume, high-deliverability B2B outreach.
+          </p>
+        </div>
+      </section>
+
+      <!-- Detailed Services -->
+      <section class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 space-y-32">
+          
+          <!-- Infrastructure -->
+          <div id="infrastructure" class="grid lg:grid-cols-2 gap-20 items-center">
+            <div>
+              <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/5 border border-primary/10 text-[10px] font-bold text-primary mb-8 uppercase tracking-[0.2em]">
+                Component 01
+              </div>
+              <h2 class="text-4xl font-extrabold text-primary mb-8">Infrastructure & Deliverability</h2>
+              <p class="text-lg text-foreground/70 mb-10 leading-relaxed">
+                We solve the inbox placement problem before a single email is sent. Our infrastructure is built for long-term sender reputation security and sharded deliverability.
+              </p>
+              <ul class="space-y-6">
+                <li class="flex gap-4 items-start">
+                  <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
+                    <iconify-icon icon="lucide:shield-check" class="text-accent text-xl"></iconify-icon>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-primary">Domain Sharding</h4>
+                    <p class="text-sm text-foreground/60">We distribute your volume across multiple optimized sub-domains to prevent primary domain damage.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4 items-start">
+                  <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
+                    <iconify-icon icon="lucide:settings" class="text-accent text-xl"></iconify-icon>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-primary">DNS Protocol Optimization</h4>
+                    <p class="text-sm text-foreground/60">Full SPF, DKIM, DMARC, and BIMI setup verified against enterprise-grade mail filters.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="bg-muted rounded-3xl p-8 border border-border shadow-inner">
+               <div class="bg-white rounded-2xl p-8 border border-border shadow-xl">
+                  <div class="flex items-center justify-between mb-8">
+                     <span class="text-xs font-bold text-primary uppercase">Deliverability Health</span>
+                     <span class="text-xs font-bold text-green-600 bg-green-50 px-3 py-1 rounded-full">99.8% Optimized</span>
+                  </div>
+                  <div class="space-y-6">
+                     <div class="h-2 w-full bg-muted rounded-full overflow-hidden">
+                        <div class="h-full bg-primary w-[95%]"></div>
+                     </div>
+                     <div class="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                           <div class="text-lg font-bold text-primary">0</div>
+                           <div class="text-[8px] font-bold text-foreground/40 uppercase">Blacklists</div>
+                        </div>
+                        <div>
+                           <div class="text-lg font-bold text-primary">100%</div>
+                           <div class="text-[8px] font-bold text-foreground/40 uppercase">DMARC Pass</div>
+                        </div>
+                        <div>
+                           <div class="text-lg font-bold text-primary">24h</div>
+                           <div class="text-[8px] font-bold text-foreground/40 uppercase">Monitoring</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+          </div>
+
+          <!-- Lead Intelligence -->
+          <div id="lead-intelligence" class="grid lg:grid-cols-2 gap-20 items-center">
+            <div class="order-2 lg:order-1 bg-muted rounded-3xl p-8 border border-border shadow-inner">
+               <div class="bg-white rounded-2xl p-8 border border-border shadow-xl">
+                  <div class="flex items-center justify-between mb-8">
+                     <span class="text-xs font-bold text-primary uppercase">Data Verification Flow</span>
+                  </div>
+                  <div class="space-y-4">
+                     <div class="flex items-center gap-4 p-4 bg-muted/50 rounded-xl border border-border/50">
+                        <iconify-icon icon="lucide:search" class="text-primary"></iconify-icon>
+                        <span class="text-xs font-medium">Source: LinkedIn/Apollo/Custom</span>
+                     </div>
+                     <div class="flex items-center justify-center py-2">
+                        <iconify-icon icon="lucide:arrow-down" class="text-accent"></iconify-icon>
+                     </div>
+                     <div class="flex items-center gap-4 p-4 bg-primary text-white rounded-xl">
+                        <iconify-icon icon="lucide:cpu"></iconify-icon>
+                        <span class="text-xs font-medium">Triple-Layer Verification Engine</span>
+                     </div>
+                     <div class="flex items-center justify-center py-2">
+                        <iconify-icon icon="lucide:arrow-down" class="text-accent"></iconify-icon>
+                     </div>
+                     <div class="flex items-center gap-4 p-4 bg-green-50 text-green-700 rounded-xl border border-green-100">
+                        <iconify-icon icon="lucide:check-circle"></iconify-icon>
+                        <span class="text-xs font-medium">0% Bounce Guaranteed List</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="order-1 lg:order-2">
+              <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/5 border border-primary/10 text-[10px] font-bold text-primary mb-8 uppercase tracking-[0.2em]">
+                Component 02
+              </div>
+              <h2 class="text-4xl font-extrabold text-primary mb-8">Lead Intelligence</h2>
+              <p class="text-lg text-foreground/70 mb-10 leading-relaxed">
+                Generic lists lead to generic results and high bounce rates. We source and verify high-intent leads that match your Ideal Customer Profile (ICP) with surgical precision.
+              </p>
+              <ul class="space-y-6">
+                <li class="flex gap-4 items-start">
+                  <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
+                    <iconify-icon icon="lucide:database" class="text-accent text-xl"></iconify-icon>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-primary">Intent-Based Sourcing</h4>
+                    <p class="text-sm text-foreground/60">We identify prospects currently searching for your solution using intent signals and custom scraping engines.</p>
+                  </div>
+                </li>
+                <li class="flex gap-4 items-start">
+                  <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0">
+                    <iconify-icon icon="lucide:zap" class="text-accent text-xl"></iconify-icon>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-primary">Deep Enrichment</h4>
+                    <p class="text-sm text-foreground/60">We append relevant data points for personalization, including recent news, tech stack, and hiring status.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Sequencing & Optimization -->
+          <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <div>
+              <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/5 border border-primary/10 text-[10px] font-bold text-primary mb-8 uppercase tracking-[0.2em]">
+                Components 03 & 04
+              </div>
+              <h2 class="text-4xl font-extrabold text-primary mb-8">Sequencing & Optimization</h2>
+              <p class="text-lg text-foreground/70 mb-10 leading-relaxed">
+                We turn cold traffic into warm business conversations through structured sequencing and continuous data-driven optimization.
+              </p>
+              <div class="grid sm:grid-cols-2 gap-8">
+                <div class="p-6 bg-muted rounded-2xl border border-border">
+                  <h4 class="font-bold text-primary mb-3 text-base">Convergent Copy</h4>
+                  <p class="text-xs text-foreground/60 leading-relaxed">Persuasive, minimal, and direct copy focused on solving a specific pain point rather than pitching.</p>
+                </div>
+                <div class="p-6 bg-muted rounded-2xl border border-border">
+                  <h4 class="font-bold text-primary mb-3 text-base">A/B Testing</h4>
+                  <p class="text-xs text-foreground/60 leading-relaxed">Constant iteration on subject lines, value props, and CTAs based on real-time reply data.</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-primary p-8 rounded-3xl text-white shadow-xl shadow-primary/20">
+                    <div class="text-3xl font-extrabold mb-1">12%</div>
+                    <div class="text-[10px] font-bold text-white/50 uppercase tracking-widest">Avg. Reply Rate</div>
+                </div>
+                <div class="bg-accent p-8 rounded-3xl text-white shadow-xl shadow-accent/20">
+                    <div class="text-3xl font-extrabold mb-1">3.5x</div>
+                    <div class="text-[10px] font-bold text-white/50 uppercase tracking-widest">ROI Multiplier</div>
+                </div>
+                <div class="col-span-2 bg-white p-8 rounded-3xl border border-border shadow-lg">
+                    <div class="flex items-center gap-4 mb-6">
+                        <iconify-icon icon="lucide:line-chart" class="text-2xl text-primary"></iconify-icon>
+                        <span class="text-sm font-bold text-primary uppercase">Weekly Performance Audit</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between text-xs font-medium">
+                            <span>Open Rate</span>
+                            <span class="text-primary font-bold">82%</span>
+                        </div>
+                        <div class="h-1.5 w-full bg-muted rounded-full">
+                            <div class="h-full bg-primary w-[82%] rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-32 bg-muted/30 border-t border-border">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+          <h2 class="text-4xl font-extrabold text-primary mb-8">Ready to scale your outreach engine?</h2>
+          <p class="text-xl text-foreground/70 mb-12 leading-relaxed">
+            Stop guessing and start booking meetings with a professional technical foundation.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="index.html#contact" class="bg-primary text-white px-12 py-5 rounded-2xl font-bold hover:shadow-2xl hover:shadow-primary/30 transition-all text-lg">
+                Book Technical Audit
+            </a>
+            <a href="projects.html" class="bg-white border border-border text-primary px-12 py-5 rounded-2xl font-bold hover:bg-muted transition-all text-lg">
+                View Case Studies
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-primary text-white pt-24 pb-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 pb-16 border-b border-white/10">
+            <div class="flex flex-col gap-6">
+              <div class="flex items-center gap-3">
+                <img src="/assets/logo.png" alt="DiamondVilla Logo" class="h-8 w-auto brightness-0 invert object-contain">
+                <span class="text-xl font-bold tracking-tight text-white uppercase">DiamondVilla</span>
+              </div>
+              <p class="text-white/60 text-sm max-w-xs leading-relaxed font-medium">
+                Building technical outreach engines for high-growth B2B companies.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-12 text-xs font-bold uppercase tracking-widest text-white/80">
+              <a href="index.html#home" class="hover:text-accent transition-colors">Home</a>
+              <a href="index.html#about" class="hover:text-accent transition-colors">About Us</a>
+              <a href="services.html" class="hover:text-accent transition-colors">Services</a>
+              <a href="projects.html" class="hover:text-accent transition-colors">Projects</a>
+              <a href="index.html#contact" class="hover:text-accent transition-colors">Contact</a>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row justify-between items-center gap-8 mt-12">
+            <div class="text-xs text-white/40 font-bold uppercase tracking-widest">
+              © 2024 DiamondVilla Infrastructure. All rights reserved.
+            </div>
+            <div class="flex gap-8 text-xs font-bold uppercase tracking-widest text-white/40">
+              <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

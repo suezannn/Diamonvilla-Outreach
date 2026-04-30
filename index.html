@@ -42,8 +42,8 @@
           <div class="hidden md:flex items-center gap-10 text-sm font-semibold">
             <a href="#home" class="text-primary hover:text-accent transition-colors">Home</a>
             <a href="#about" class="text-primary hover:text-accent transition-colors">About Us</a>
-            <a href="#services" class="text-primary hover:text-accent transition-colors">Services</a>
-            <a href="#projects" class="text-primary hover:text-accent transition-colors">Projects</a>
+            <a href="services.html" class="text-primary hover:text-accent transition-colors">Services</a>
+            <a href="projects.html" class="text-primary hover:text-accent transition-colors">Projects</a>
             <a href="#contact" class="text-primary hover:text-accent transition-colors">Contact Us</a>
             <a href="#contact" class="bg-primary text-white px-6 py-3 rounded hover:shadow-lg hover:shadow-primary/20 transition-all">Get Free Audit</a>
           </div>
@@ -169,28 +169,39 @@
           <h3 class="text-4xl font-extrabold text-primary">Unified Managed Systems</h3>
         </div>
         
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="group bg-white p-10 rounded-2xl border border-border hover:border-accent hover:shadow-2xl transition-all duration-300">
+        <a href="services.html" class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-8 group/engine block relative">
+          <div class="group bg-white p-10 rounded-2xl border border-border group-hover/engine:border-accent group-hover/engine:shadow-2xl transition-all duration-300">
             <span class="text-[10px] font-extrabold text-foreground/40 uppercase tracking-widest">Component 01</span>
             <h4 class="text-xl font-bold text-primary mt-6 mb-4">Infrastructure</h4>
             <p class="text-sm text-foreground/60 leading-relaxed">SPF/DKIM/DMARC optimization, domain sharding, and dedicated warm-up pools.</p>
           </div>
-          <div class="group bg-white p-10 rounded-2xl border border-border hover:border-accent hover:shadow-2xl transition-all duration-300">
+          <div class="group bg-white p-10 rounded-2xl border border-border group-hover/engine:border-accent group-hover/engine:shadow-2xl transition-all duration-300">
             <span class="text-[10px] font-extrabold text-foreground/40 uppercase tracking-widest">Component 02</span>
             <h4 class="text-xl font-bold text-primary mt-6 mb-4">Lead Intelligence</h4>
             <p class="text-sm text-foreground/60 leading-relaxed">Intent-based lead sourcing with triple-layer verification to ensure zero bounces.</p>
           </div>
-          <div class="group bg-white p-10 rounded-2xl border border-border hover:border-accent hover:shadow-2xl transition-all duration-300">
+          <div class="group bg-white p-10 rounded-2xl border border-border group-hover/engine:border-accent group-hover/engine:shadow-2xl transition-all duration-300">
             <span class="text-[10px] font-extrabold text-foreground/40 uppercase tracking-widest">Component 03</span>
             <h4 class="text-xl font-bold text-primary mt-6 mb-4">Sequencing</h4>
             <p class="text-sm text-foreground/60 leading-relaxed">Conversion-driven copy focused on starting genuine business conversations.</p>
           </div>
-          <div class="group bg-white p-10 rounded-2xl border border-border hover:border-accent hover:shadow-2xl transition-all duration-300">
+          <div class="group bg-white p-10 rounded-2xl border border-border group-hover/engine:border-accent group-hover/engine:shadow-2xl transition-all duration-300">
             <span class="text-[10px] font-extrabold text-foreground/40 uppercase tracking-widest">Component 04</span>
             <h4 class="text-xl font-bold text-primary mt-6 mb-4">Optimization</h4>
             <p class="text-sm text-foreground/60 leading-relaxed">Continuous A/B testing and deliverability monitoring for peak performance.</p>
           </div>
-        </div>
+          
+          <!-- Animated Indicator -->
+          <div class="col-span-full flex justify-center mt-12">
+            <div class="inline-flex items-center gap-3 text-accent font-bold text-sm group-hover/engine:translate-x-2 transition-transform duration-300">
+              Explore Our Full Service Stack
+              <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center relative">
+                <iconify-icon icon="lucide:arrow-right" class="text-xl"></iconify-icon>
+                <span class="absolute inset-0 rounded-full bg-accent/20 animate-ping"></span>
+              </div>
+            </div>
+          </div>
+        </a>
       </section>
 
       <!-- Projects Section -->
@@ -198,133 +209,99 @@
         <div class="max-w-7xl mx-auto px-6">
           <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
             <div class="max-w-2xl">
-              <h2 class="text-sm font-bold text-accent uppercase tracking-[0.2em] mb-4">Case Studies</h2>
-              <h3 class="text-4xl font-extrabold text-primary">Predictable results for high-growth B2B companies</h3>
+              <h2 class="text-sm font-bold text-accent uppercase tracking-[0.2em] mb-4">Portfolio & Results</h2>
+              <h3 class="text-4xl font-extrabold text-primary">Technical systems that deliver predictable growth</h3>
             </div>
             <div class="flex items-center gap-3 px-6 py-3 bg-white border border-border rounded-xl text-sm font-bold text-primary shadow-sm">
               <iconify-icon icon="lucide:award" class="text-accent text-xl"></iconify-icon>
               Verified Outcomes
             </div>
           </div>
-          
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Project Card 1 -->
-            <div class="bg-white border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group flex flex-col h-full">
-              <div class="relative aspect-[16/10] overflow-hidden">
-                <img src="/assets/project-1.jpg" alt="Infrastructure Scaling" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
-                <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest">
-                  Infrastructure
-                </div>
-              </div>
-              <div class="p-8 flex flex-col flex-1">
-                <div class="text-[10px] font-extrabold text-accent mb-2 uppercase tracking-widest">SaaS / Growth Agency</div>
-                <h4 class="text-xl font-bold text-primary mb-3 leading-tight group-hover:text-accent transition-colors">Infrastructure scaling to 45+ qualified meetings/mo</h4>
-                <p class="text-sm text-foreground/60 leading-relaxed mb-6 flex-1">Restructured a burned domain setup into a 15-domain sharded infrastructure. Achieved 82% open rates and primary inbox placement.</p>
-                
-                <div class="bg-muted/50 rounded-2xl p-4 mb-6 border border-border/50">
-                  <div class="flex items-center gap-3">
-                    <iconify-icon icon="lucide:trending-up" class="text-accent text-lg"></iconify-icon>
-                    <div>
-                      <div class="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Key Result</div>
-                      <div class="text-sm font-bold text-primary">82% Open Rate sustained for 6 months</div>
-                    </div>
+
+          <!-- Featured Case Study -->
+          <div class="mb-24">
+            <div class="bg-white border border-border rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-700 group">
+              <div class="grid lg:grid-cols-2">
+                <div class="relative h-[400px] lg:h-auto overflow-hidden">
+                  <img src="/assets/case-study-1.jpg" alt="Case Study Sample" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000">
+                  <div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all duration-700"></div>
+                  <div class="absolute top-8 left-8 bg-accent text-white text-[10px] font-bold px-4 py-2 rounded-full uppercase tracking-[0.2em] shadow-xl">
+                    Featured Case Study
                   </div>
                 </div>
+                <div class="p-10 lg:p-16 flex flex-col justify-center">
+                  <div class="text-[10px] font-extrabold text-accent mb-4 uppercase tracking-[0.2em]">SaaS / Enterprise Growth</div>
+                  <h4 class="text-3xl lg:text-4xl font-extrabold text-primary mb-6 leading-tight">Multi-Channel Outreach Automation</h4>
+                  <p class="text-lg text-foreground/60 leading-relaxed mb-10">Integrated LinkedIn and Email automation with optimized touchpoints based on prospect behavior and real-time CRM data sync.</p>
+                  
+                  <div class="grid sm:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-muted/50 rounded-2xl p-6 border border-border/50">
+                      <div class="text-3xl font-extrabold text-primary mb-1">250%</div>
+                      <div class="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Lead Velocity Increase</div>
+                    </div>
+                    <div class="bg-muted/50 rounded-2xl p-6 border border-border/50">
+                      <div class="text-3xl font-extrabold text-primary mb-1">90 Days</div>
+                      <div class="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Implementation Phase</div>
+                    </div>
+                  </div>
 
-                <a href="#contact" class="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:text-accent transition-colors uppercase tracking-widest">
-                  View Project 
-                  <iconify-icon icon="lucide:arrow-right" class="transition-transform group-hover:translate-x-1"></iconify-icon>
-                </a>
+                  <a href="projects.html" class="inline-flex items-center justify-center gap-3 bg-primary text-white px-10 py-5 rounded-2xl font-bold hover:bg-accent transition-all duration-300 shadow-xl shadow-primary/20 cursor-pointer">
+                    See Case Study Details
+                    <iconify-icon icon="lucide:external-link" class="text-xl"></iconify-icon>
+                  </a>
+                </div>
               </div>
             </div>
+          </div>
 
-            <!-- Project Card 2 -->
-            <div class="bg-white border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group flex flex-col h-full">
-              <div class="relative aspect-[16/10] overflow-hidden">
-                <img src="/assets/project-2.jpg" alt="Pipeline Generation" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
-                <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest">
-                  Growth Systems
-                </div>
-              </div>
-              <div class="p-8 flex flex-col flex-1">
-                <div class="text-[10px] font-extrabold text-accent mb-2 uppercase tracking-widest">B2B Service Provider</div>
-                <h4 class="text-xl font-bold text-primary mb-3 leading-tight group-hover:text-accent transition-colors">$1.2M pipeline generated from zero outbound</h4>
-                <p class="text-sm text-foreground/60 leading-relaxed mb-6 flex-1">Built the outbound engine from scratch for a new service offering. Focused on high-intent data and personalized technical sequencing.</p>
-                
-                <div class="bg-muted/50 rounded-2xl p-4 mb-6 border border-border/50">
-                  <div class="flex items-center gap-3">
-                    <iconify-icon icon="lucide:check-circle-2" class="text-accent text-lg"></iconify-icon>
-                    <div>
-                      <div class="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Key Result</div>
-                      <div class="text-sm font-bold text-primary">18.4% Reply Rate on first touch</div>
-                    </div>
-                  </div>
-                </div>
-
-                <a href="#contact" class="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:text-accent transition-colors uppercase tracking-widest">
-                  See Case Study 
-                  <iconify-icon icon="lucide:arrow-right" class="transition-transform group-hover:translate-x-1"></iconify-icon>
-                </a>
-              </div>
+          <!-- Project Samples Grid -->
+          <div>
+            <div class="flex items-center gap-4 mb-12">
+              <h4 class="text-xl font-bold text-primary">Technical Previews</h4>
+              <div class="h-px bg-border flex-1"></div>
             </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+              <!-- Project Sample 1 -->
+              <div class="bg-white border border-border rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+                <div class="relative aspect-video overflow-hidden bg-muted">
+                  <img src="/assets/project-1.jpg" alt="Project Sample 1" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+                </div>
+                <div class="p-8 flex flex-col flex-1">
+                  <h5 class="text-lg font-bold text-primary mb-2">Infrastructure Scaling</h5>
+                  <p class="text-sm text-foreground/60 leading-relaxed mb-6 flex-1">Technical setup for 15+ domains with automated rotation protocols.</p>
+                  <a href="projects.html" class="w-full py-4 border border-border rounded-xl text-xs font-bold text-primary text-center uppercase tracking-widest hover:bg-primary hover:text-white transition-all duration-300 cursor-pointer">
+                    View Project
+                  </a>
+                </div>
+              </div>
 
-            <!-- Project Card 3 -->
-            <div class="bg-white border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group flex flex-col h-full">
-              <div class="relative aspect-[16/10] overflow-hidden">
-                <img src="/assets/project-3.jpg" alt="Data Intelligence" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
-                <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest">
-                  Lead Intel
+              <!-- Project Sample 2 -->
+              <div class="bg-white border border-border rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+                <div class="relative aspect-video overflow-hidden bg-muted">
+                  <img src="/assets/project-2.jpg" alt="Project Sample 2" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+                </div>
+                <div class="p-8 flex flex-col flex-1">
+                  <h5 class="text-lg font-bold text-primary mb-2">Lead Intelligence</h5>
+                  <p class="text-sm text-foreground/60 leading-relaxed mb-6 flex-1">Custom scraping engines with intent-based filtering and verification.</p>
+                  <a href="projects.html" class="w-full py-4 border border-border rounded-xl text-xs font-bold text-primary text-center uppercase tracking-widest hover:bg-primary hover:text-white transition-all duration-300 cursor-pointer">
+                    View Project
+                  </a>
                 </div>
               </div>
-              <div class="p-8 flex flex-col flex-1">
-                <div class="text-[10px] font-extrabold text-accent mb-2 uppercase tracking-widest">FinTech SaaS</div>
-                <h4 class="text-xl font-bold text-primary mb-3 leading-tight group-hover:text-accent transition-colors">Precision targeting for SaaS series B startup</h4>
-                <p class="text-sm text-foreground/60 leading-relaxed mb-6 flex-1">Implemented an intent-based scraping system that identified companies recently changing their tech stack.</p>
-                
-                <div class="bg-muted/50 rounded-2xl p-4 mb-6 border border-border/50">
-                  <div class="flex items-center gap-3">
-                    <iconify-icon icon="lucide:zap" class="text-accent text-lg"></iconify-icon>
-                    <div>
-                      <div class="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Key Result</div>
-                      <div class="text-sm font-bold text-primary">3.2x ROI within first 90 days</div>
-                    </div>
-                  </div>
-                </div>
 
-                <a href="#contact" class="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:text-accent transition-colors uppercase tracking-widest">
-                  View Project 
-                  <iconify-icon icon="lucide:arrow-right" class="transition-transform group-hover:translate-x-1"></iconify-icon>
-                </a>
-              </div>
-            <!-- Project Card 4 -->
-            <div class="bg-white border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group flex flex-col h-full">
-              <div class="relative aspect-[16/10] overflow-hidden">
-                <img src="/assets/project-4.jpg" alt="Project Case Study 4" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
-                <div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-md text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-widest">
-                  Automation / Enterprise
+              <!-- Project Sample 3 -->
+              <div class="bg-white border border-border rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+                <div class="relative aspect-video overflow-hidden bg-muted">
+                  <img src="/assets/project-3.jpg" alt="Project Sample 3" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+                </div>
+                <div class="p-8 flex flex-col flex-1">
+                  <h5 class="text-lg font-bold text-primary mb-2">Deliverability Audit</h5>
+                  <p class="text-sm text-foreground/60 leading-relaxed mb-6 flex-1">Deep DNS analysis and inbox placement reporting for burned domains.</p>
+                  <a href="projects.html" class="w-full py-4 border border-border rounded-xl text-xs font-bold text-primary text-center uppercase tracking-widest hover:bg-primary hover:text-white transition-all duration-300 cursor-pointer">
+                    View Project
+                  </a>
                 </div>
               </div>
-              <div class="p-8 flex flex-col flex-1">
-                <div class="text-[10px] font-extrabold text-accent mb-2 uppercase tracking-widest">Fortune 500 Tech Partner</div>
-                <h4 class="text-xl font-bold text-primary mb-3 leading-tight group-hover:text-accent transition-colors">Multi-Channel Outreach Automation</h4>
-                <p class="text-sm text-foreground/60 leading-relaxed mb-6 flex-1">Integrated LinkedIn and Email automation with optimized touchpoints based on prospect behavior and real-time CRM data sync.</p>
-                
-                <div class="bg-muted/50 rounded-2xl p-4 mb-6 border border-border/50">
-                  <div class="flex items-center gap-3">
-                    <iconify-icon icon="lucide:rocket" class="text-accent text-lg"></iconify-icon>
-                    <div>
-                      <div class="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Key Metric</div>
-                      <div class="text-sm font-bold text-primary">250% increase in lead velocity</div>
-                    </div>
-                  </div>
-                </div>
-
-                <a href="#contact" class="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:text-accent transition-colors uppercase tracking-widest">
-                  View Project 
-                  <iconify-icon icon="lucide:arrow-right" class="transition-transform group-hover:translate-x-1"></iconify-icon>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -356,15 +333,15 @@
                   <p class="text-sm text-foreground/60 mt-1">Receive a step-by-step plan to scale your outbound without risk.</p>
                 </div>
               </div>
-              <div class="flex gap-6 items-start pt-8 border-t border-border">
-                <div class="w-14 h-14 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center shrink-0">
-                  <iconify-icon icon="lucide:send" class="text-accent text-2xl"></iconify-icon>
+              <div onclick="openInquiryModal()" class="flex gap-6 items-start pt-8 border-t border-border group cursor-pointer">
+                <div class="w-14 h-14 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center shrink-0 group-hover:bg-accent group-hover:text-white transition-all">
+                  <iconify-icon icon="lucide:send" class="text-accent text-2xl group-hover:text-white"></iconify-icon>
                 </div>
                 <div>
                   <div class="font-bold text-primary text-lg">Direct Inquiry</div>
-                  <a href="mailto:DIAMONDVILLA25@GMAIL.COM" class="text-xl font-extrabold text-accent hover:text-primary transition-colors decoration-accent/30 underline-offset-4 hover:underline">
+                  <div class="text-xl font-extrabold text-accent group-hover:text-primary transition-colors decoration-accent/30 underline-offset-4 underline">
                     DIAMONDVILLA25@GMAIL.COM
-                  </a>
+                  </div>
                   <p class="text-[10px] font-bold text-foreground/40 uppercase tracking-[0.2em] mt-2">Personalized response within 24 hours</p>
                 </div>
               </div>
@@ -374,27 +351,27 @@
           <div class="bg-white p-12 rounded-3xl border border-border shadow-2xl">
             <h3 class="text-2xl font-bold text-primary mb-2">Request Deliverability Audit</h3>
             <p class="text-sm text-foreground/60 mb-10">We respect your privacy. No spam, just clear insights.</p>
-            <form class="space-y-6">
+            <form id="auditForm" class="space-y-6" action="https://formspree.io/f/mnyeppoz" method="POST">
               <div class="grid md:grid-cols-2 gap-6">
                 <div class="space-y-2">
                   <label class="text-[10px] font-bold text-primary uppercase tracking-widest">Full Name</label>
-                  <input type="text" class="w-full px-5 py-4 rounded-xl bg-muted border-transparent focus:bg-white focus:ring-2 focus:ring-accent outline-none text-sm transition-all" placeholder="John Doe">
+                  <input type="text" name="name" required class="w-full px-5 py-4 rounded-xl bg-muted border-transparent focus:bg-white focus:ring-2 focus:ring-accent outline-none text-sm transition-all" placeholder="John Doe">
                 </div>
                 <div class="space-y-2">
                   <label class="text-[10px] font-bold text-primary uppercase tracking-widest">Work Email</label>
-                  <input type="email" class="w-full px-5 py-4 rounded-xl bg-muted border-transparent focus:bg-white focus:ring-2 focus:ring-accent outline-none text-sm transition-all" placeholder="john@company.com">
+                  <input type="email" name="email" required class="w-full px-5 py-4 rounded-xl bg-muted border-transparent focus:bg-white focus:ring-2 focus:ring-accent outline-none text-sm transition-all" placeholder="john@company.com">
                 </div>
               </div>
               <div class="space-y-2">
-                <label class="text-[10px] font-bold text-primary uppercase tracking-widest">Website / Current Tool</label>
-                <input type="text" class="w-full px-5 py-4 rounded-xl bg-muted border-transparent focus:bg-white focus:ring-2 focus:ring-accent outline-none text-sm transition-all" placeholder="e.g. yourwebsite.com or Smartlead">
+                <label class="text-[10px] font-bold text-primary uppercase tracking-widest">Message</label>
+                <textarea name="message" required rows="4" class="w-full px-5 py-4 rounded-xl bg-muted border-transparent focus:bg-white focus:ring-2 focus:ring-accent outline-none text-sm transition-all resize-none" placeholder="How can we help you scale?"></textarea>
               </div>
               <button type="submit" class="w-full bg-accent text-white py-5 rounded-xl font-bold hover:shadow-2xl hover:shadow-accent/20 transition-all mt-6 text-base tracking-wide">
-                Get My Free Technical Audit
+                Send Message
               </button>
               <div class="text-center text-[11px] text-foreground/50 mt-6 font-medium">
                 <iconify-icon icon="lucide:lock" class="inline mr-1 text-accent align-middle"></iconify-icon>
-                Your data is protected. No access to your primary workspace required.
+                Your data is protected. Submissions sent to DIAMONDVILLA25@GMAIL.COM
               </div>
             </form>
           </div>
@@ -417,8 +394,8 @@
             <div class="flex flex-wrap gap-12 text-xs font-bold uppercase tracking-widest text-white/80">
               <a href="#home" class="hover:text-accent transition-colors">Home</a>
               <a href="#about" class="hover:text-accent transition-colors">About Us</a>
-              <a href="#services" class="hover:text-accent transition-colors">Services</a>
-              <a href="#projects" class="hover:text-accent transition-colors">Projects</a>
+              <a href="services.html" class="hover:text-accent transition-colors">Services</a>
+              <a href="projects.html" class="hover:text-accent transition-colors">Projects</a>
               <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
             </div>
           </div>
@@ -433,6 +410,190 @@
           </div>
         </div>
       </footer>
-    </div>
+      <!-- Lightbox for Projects -->
+      <div id="lightbox" class="fixed inset-0 z-[100] bg-primary/95 backdrop-blur-xl hidden flex items-center justify-center p-4 lg:p-12 opacity-0 transition-opacity duration-500">
+        <button onclick="closeLightbox()" class="absolute top-8 right-8 text-white text-4xl hover:text-accent transition-colors cursor-pointer">
+          <iconify-icon icon="lucide:x"></iconify-icon>
+        </button>
+        <div class="max-w-6xl w-full flex flex-col items-center">
+          <img id="lightbox-img" src="" alt="" class="max-h-[80vh] w-auto rounded-2xl shadow-2xl border border-white/10">
+          <h4 id="lightbox-title" class="text-white text-2xl font-bold mt-8"></h4>
+        </div>
+      </div>
+
+      <!-- Case Study Modal -->
+      <div id="caseStudyModal" class="fixed inset-0 z-[100] bg-primary/95 backdrop-blur-xl hidden flex items-center justify-center p-4 lg:p-12 opacity-0 transition-opacity duration-500">
+        <div class="bg-white max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-[2.5rem] relative">
+          <button onclick="closeCaseStudy()" class="sticky top-6 float-right mr-6 bg-muted w-12 h-12 rounded-full flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-all z-10 shadow-lg cursor-pointer">
+            <iconify-icon icon="lucide:x" class="text-2xl"></iconify-icon>
+          </button>
+          
+          <div class="p-8 lg:p-16">
+            <div class="text-[10px] font-extrabold text-accent mb-4 uppercase tracking-[0.2em]">Full Case Study Details</div>
+            <h4 class="text-4xl font-extrabold text-primary mb-8 leading-tight">Multi-Channel Outreach Automation</h4>
+            
+            <img src="/assets/case-study-1.jpg" alt="Case Study Full" class="w-full aspect-video object-cover rounded-3xl mb-12 shadow-2xl">
+            
+            <div class="grid md:grid-cols-2 gap-12 text-foreground/70 leading-relaxed text-sm">
+              <div class="space-y-6">
+                <h5 class="text-xl font-bold text-primary">The Challenge</h5>
+                <p>The client was struggling with low response rates and fragmented data across multiple outreach channels. Their primary domain was at risk due to unoptimized scaling attempts.</p>
+                <ul class="space-y-3">
+                  <li class="flex items-center gap-3">
+                    <iconify-icon icon="lucide:alert-circle" class="text-accent"></iconify-icon>
+                    Poor inbox placement (under 40%)
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <iconify-icon icon="lucide:alert-circle" class="text-accent"></iconify-icon>
+                    Manual LinkedIn prospecting (slow scaling)
+                  </li>
+                </ul>
+              </div>
+              <div class="space-y-6">
+                <h5 class="text-xl font-bold text-primary">The Solution</h5>
+                <p>We implemented a unified technical system that synchronized email and LinkedIn touchpoints, protected by a sharded infrastructure.</p>
+                <ul class="space-y-3">
+                  <li class="flex items-center gap-3">
+                    <iconify-icon icon="lucide:check-circle-2" class="text-accent"></iconify-icon>
+                    15 Dedicated Outreach Domains
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <iconify-icon icon="lucide:check-circle-2" class="text-accent"></iconify-icon>
+                    Automated CRM Sync & Enrichment
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="mt-16 pt-12 border-t border-border flex flex-col items-center text-center">
+              <h5 class="text-2xl font-extrabold text-primary mb-8">Ready for similar results?</h5>
+              <a href="#contact" onclick="closeCaseStudy()" class="bg-accent text-white px-12 py-5 rounded-2xl font-bold hover:shadow-2xl hover:shadow-accent/30 transition-all text-lg">
+                Book Your Technical Audit
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inquiry Modal -->
+      <div id="inquiryModal" class="fixed inset-0 z-[100] bg-primary/95 backdrop-blur-xl hidden flex items-center justify-center p-4 lg:p-12 opacity-0 transition-opacity duration-500">
+        <div class="bg-white max-w-xl w-full rounded-3xl relative p-8 lg:p-12 overflow-hidden">
+          <button onclick="closeInquiryModal()" class="absolute top-6 right-6 w-10 h-10 rounded-full bg-muted flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-all cursor-pointer">
+            <iconify-icon icon="lucide:x" class="text-xl"></iconify-icon>
+          </button>
+          
+          <div class="mb-10">
+            <h3 class="text-3xl font-extrabold text-primary mb-2">Direct Inquiry</h3>
+            <p class="text-sm text-foreground/60">Send a direct message to our specialized infrastructure team.</p>
+          </div>
+
+          <form id="inquiryForm" action="https://formspree.io/f/mnyeppoz" method="POST" class="space-y-6">
+            <div class="space-y-2">
+              <label class="text-[10px] font-bold text-primary uppercase tracking-widest">Full Name</label>
+              <input type="text" name="name" required class="w-full px-5 py-4 rounded-xl bg-muted border-transparent focus:bg-white focus:ring-2 focus:ring-accent outline-none text-sm transition-all" placeholder="John Doe">
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label class="text-[10px] font-bold text-primary uppercase tracking-widest">Email Address</label>
+                <input type="email" name="email" required class="w-full px-5 py-4 rounded-xl bg-muted border-transparent focus:bg-white focus:ring-2 focus:ring-accent outline-none text-sm transition-all" placeholder="john@work.com">
+              </div>
+              <div class="space-y-2">
+                <label class="text-[10px] font-bold text-primary uppercase tracking-widest">Company (Optional)</label>
+                <input type="text" name="company" class="w-full px-5 py-4 rounded-xl bg-muted border-transparent focus:bg-white focus:ring-2 focus:ring-accent outline-none text-sm transition-all" placeholder="Company Name">
+              </div>
+            </div>
+            <div class="space-y-2">
+              <label class="text-[10px] font-bold text-primary uppercase tracking-widest">Message</label>
+              <textarea name="message" required rows="4" class="w-full px-5 py-4 rounded-xl bg-muted border-transparent focus:bg-white focus:ring-2 focus:ring-accent outline-none text-sm transition-all resize-none" placeholder="Tell us about your outreach goals..."></textarea>
+            </div>
+            <button type="submit" class="w-full bg-primary text-white py-5 rounded-xl font-bold hover:bg-accent transition-all text-base tracking-wide shadow-xl shadow-primary/20">
+              Send Inquiry
+            </button>
+          </form>
+        </div>
+      </div>
+
+    <script>
+      function openLightbox(imgSrc, title) {
+        const lightbox = document.getElementById('lightbox');
+        const img = document.getElementById('lightbox-img');
+        const titleEl = document.getElementById('lightbox-title');
+        
+        img.src = imgSrc;
+        titleEl.textContent = title;
+        
+        lightbox.classList.remove('hidden');
+        setTimeout(() => {
+          lightbox.classList.add('flex');
+          lightbox.classList.remove('opacity-0');
+          lightbox.classList.add('opacity-100');
+        }, 10);
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        lightbox.classList.add('opacity-0');
+        lightbox.classList.remove('opacity-100');
+        setTimeout(() => {
+          lightbox.classList.add('hidden');
+          lightbox.classList.remove('flex');
+        }, 500);
+        document.body.style.overflow = '';
+      }
+
+      function openCaseStudy() {
+        const modal = document.getElementById('caseStudyModal');
+        modal.classList.remove('hidden');
+        setTimeout(() => {
+          modal.classList.add('flex');
+          modal.classList.remove('opacity-0');
+          modal.classList.add('opacity-100');
+        }, 10);
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeCaseStudy() {
+        const modal = document.getElementById('caseStudyModal');
+        modal.classList.add('opacity-0');
+        modal.classList.remove('opacity-100');
+        setTimeout(() => {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }, 500);
+        document.body.style.overflow = '';
+      }
+
+      function openInquiryModal() {
+        const modal = document.getElementById('inquiryModal');
+        modal.classList.remove('hidden');
+        setTimeout(() => {
+          modal.classList.add('flex');
+          modal.classList.remove('opacity-0');
+          modal.classList.add('opacity-100');
+        }, 10);
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeInquiryModal() {
+        const modal = document.getElementById('inquiryModal');
+        modal.classList.add('opacity-0');
+        modal.classList.remove('opacity-100');
+        setTimeout(() => {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }, 500);
+        document.body.style.overflow = '';
+      }
+
+      // Close on escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeLightbox();
+          closeCaseStudy();
+          closeInquiryModal();
+        }
+      });
+    </script>
   </body>
 </html>

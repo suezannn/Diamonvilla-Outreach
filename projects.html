@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | DiamondVilla B2B Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <style type="text/tailwindcss">
+      @import "tailwindcss";
+      @theme inline {
+        --color-background: var(--background);
+        --color-foreground: var(--foreground);
+        --color-primary: var(--primary);
+        --color-accent: var(--accent);
+        --color-muted: var(--muted);
+        --color-border: var(--border);
+        --font-family-sans: 'Plus Jakarta Sans', sans-serif;
+      }
+      :root {
+        --primary: #0B2D5C;
+        --accent: #D4A017;
+        --background: #FFFFFF;
+        --muted: #F5F5F5;
+        --foreground: #2B2B2B;
+        --border: #E2E8F0;
+      }
+    </style>
+  </head>
+  <body class="bg-background font-sans text-foreground selection:bg-accent/30">
+    <div class="min-h-screen flex flex-col relative">
+      <!-- Navigation -->
+      <nav class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+          <a href="index.html#home" class="flex items-center gap-3">
+            <img src="/assets/logo.png" alt="DiamondVilla Logo" class="h-9 w-auto object-contain">
+            <span class="text-xl font-bold tracking-tight text-primary uppercase hidden sm:block">DiamondVilla</span>
+          </a>
+          <div class="hidden md:flex items-center gap-10 text-sm font-semibold">
+            <a href="index.html#home" class="text-primary hover:text-accent transition-colors">Home</a>
+            <a href="index.html#about" class="text-primary hover:text-accent transition-colors">About Us</a>
+            <a href="services.html" class="text-primary hover:text-accent transition-colors">Services</a>
+            <a href="projects.html" class="text-accent transition-colors">Projects</a>
+            <a href="index.html#contact" class="text-primary hover:text-accent transition-colors">Contact Us</a>
+            <a href="index.html#contact" class="bg-primary text-white px-6 py-3 rounded hover:shadow-lg hover:shadow-primary/20 transition-all">Get Free Audit</a>
+          </div>
+          <button class="md:hidden text-primary">
+            <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Projects Header -->
+      <section class="pt-32 pb-20 bg-muted/30 border-b border-border">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+          <h2 class="text-sm font-bold text-accent uppercase tracking-[0.2em] mb-4">Portfolio & Proof</h2>
+          <h1 class="text-5xl lg:text-7xl font-extrabold text-primary leading-tight mb-8">
+            Case Studies & Work Samples
+          </h1>
+          <p class="text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
+            A deep dive into the technical systems and outreach frameworks we've built for high-growth B2B companies.
+          </p>
+        </div>
+      </section>
+
+      <!-- Featured Case Studies -->
+      <section class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex items-center gap-4 mb-16">
+            <h2 class="text-2xl font-extrabold text-primary">Featured Case Studies</h2>
+            <div class="h-px bg-border flex-1"></div>
+          </div>
+
+          <div class="space-y-24">
+            <!-- Case Study 1 -->
+            <div class="bg-white border border-border rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-700 group">
+              <div class="grid lg:grid-cols-2">
+                <div class="relative h-[400px] lg:h-auto overflow-hidden">
+                  <img src="/assets/case-study-1.jpg" alt="Case Study" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000">
+                  <div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all duration-700"></div>
+                  <div class="absolute top-8 left-8 bg-accent text-white text-[10px] font-bold px-4 py-2 rounded-full uppercase tracking-[0.2em] shadow-xl">
+                    SaaS Growth
+                  </div>
+                </div>
+                <div class="p-10 lg:p-16 flex flex-col justify-center">
+                  <div class="text-[10px] font-extrabold text-accent mb-4 uppercase tracking-[0.2em]">Efficiency & Scale</div>
+                  <h4 class="text-3xl lg:text-4xl font-extrabold text-primary mb-6 leading-tight">Multi-Channel Outreach Automation</h4>
+                  <p class="text-lg text-foreground/60 leading-relaxed mb-10">
+                    Integrated LinkedIn and Email automation with optimized touchpoints based on prospect behavior and real-time CRM data sync.
+                  </p>
+                  
+                  <div class="grid sm:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-muted/50 rounded-2xl p-6 border border-border/50">
+                      <div class="text-3xl font-extrabold text-primary mb-1">250%</div>
+                      <div class="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Lead Velocity Increase</div>
+                    </div>
+                    <div class="bg-muted/50 rounded-2xl p-6 border border-border/50">
+                      <div class="text-3xl font-extrabold text-primary mb-1">90 Days</div>
+                      <div class="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Implementation Phase</div>
+                    </div>
+                  </div>
+
+                  <button onclick="openCaseStudy()" class="inline-flex items-center justify-center gap-3 bg-primary text-white px-10 py-5 rounded-2xl font-bold hover:bg-accent transition-all duration-300 shadow-xl shadow-primary/20 cursor-pointer">
+                    Read Detailed Case Study
+                    <iconify-icon icon="lucide:arrow-right" class="text-xl"></iconify-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Projects / Work Samples -->
+      <section class="py-32 bg-muted/30 border-t border-b border-border">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex items-center gap-4 mb-16">
+            <h2 class="text-2xl font-extrabold text-primary">Work Samples</h2>
+            <div class="h-px bg-border flex-1"></div>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Project Sample 1 -->
+            <div class="bg-white border border-border rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+              <div class="relative aspect-video overflow-hidden bg-muted">
+                <img src="/assets/project-1.jpg" alt="Project Sample 1" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+              </div>
+              <div class="p-8 flex flex-col flex-1">
+                <div class="text-[10px] font-extrabold text-accent mb-2 uppercase tracking-widest">Infrastructure</div>
+                <h5 class="text-xl font-bold text-primary mb-2">Technical Scaling System</h5>
+                <p class="text-sm text-foreground/60 leading-relaxed mb-8 flex-1">
+                  Full setup of 20+ sending domains with automated rotation and sharded deliverability protocols.
+                </p>
+                <button onclick="openLightbox('/assets/project-1.jpg', 'Technical Scaling System')" class="w-full py-4 border border-border rounded-xl text-xs font-bold text-primary uppercase tracking-widest hover:bg-primary hover:text-white transition-all duration-300 cursor-pointer">
+                  View Technical Preview
+                </button>
+              </div>
+            </div>
+
+            <!-- Project Sample 2 -->
+            <div class="bg-white border border-border rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+              <div class="relative aspect-video overflow-hidden bg-muted">
+                <img src="/assets/project-2.jpg" alt="Project Sample 2" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+              </div>
+              <div class="p-8 flex flex-col flex-1">
+                <div class="text-[10px] font-extrabold text-accent mb-2 uppercase tracking-widest">Lead Intelligence</div>
+                <h5 class="text-xl font-bold text-primary mb-2">Intent-Based Lead Engine</h5>
+                <p class="text-sm text-foreground/60 leading-relaxed mb-8 flex-1">
+                  Custom scraping workflows and AI-driven enrichment for high-intent prospect identification.
+                </p>
+                <button onclick="openLightbox('/assets/project-2.jpg', 'Intent-Based Lead Engine')" class="w-full py-4 border border-border rounded-xl text-xs font-bold text-primary uppercase tracking-widest hover:bg-primary hover:text-white transition-all duration-300 cursor-pointer">
+                  View Technical Preview
+                </button>
+              </div>
+            </div>
+
+            <!-- Project Sample 3 -->
+            <div class="bg-white border border-border rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+              <div class="relative aspect-video overflow-hidden bg-muted">
+                <img src="/assets/project-3.jpg" alt="Project Sample 3" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+              </div>
+              <div class="p-8 flex flex-col flex-1">
+                <div class="text-[10px] font-extrabold text-accent mb-2 uppercase tracking-widest">Optimization</div>
+                <h5 class="text-xl font-bold text-primary mb-2">Campaign Performance Hub</h5>
+                <p class="text-sm text-foreground/60 leading-relaxed mb-8 flex-1">
+                  Advanced analytics dashboard tracking deliverability, reply rates, and meeting booking velocity.
+                </p>
+                <button onclick="openLightbox('/assets/project-3.jpg', 'Campaign Performance Hub')" class="w-full py-4 border border-border rounded-xl text-xs font-bold text-primary uppercase tracking-widest hover:bg-primary hover:text-white transition-all duration-300 cursor-pointer">
+                  View Technical Preview
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-32 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+          <h2 class="text-4xl font-extrabold text-primary mb-8">Ready to see these systems in your business?</h2>
+          <p class="text-xl text-foreground/70 mb-12 leading-relaxed">
+            We build the technical foundation. You handle the qualified meetings.
+          </p>
+          <a href="index.html#contact" class="inline-flex items-center justify-center gap-3 bg-accent text-white px-12 py-5 rounded-2xl font-bold hover:shadow-2xl hover:shadow-accent/30 transition-all text-lg">
+            Book Your Technical Audit
+            <iconify-icon icon="lucide:calendar" class="text-xl"></iconify-icon>
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-primary text-white pt-24 pb-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 pb-16 border-b border-white/10">
+            <div class="flex flex-col gap-6">
+              <div class="flex items-center gap-3">
+                <img src="/assets/logo.png" alt="DiamondVilla Logo" class="h-8 w-auto brightness-0 invert object-contain">
+                <span class="text-xl font-bold tracking-tight text-white uppercase">DiamondVilla</span>
+              </div>
+              <p class="text-white/60 text-sm max-w-xs leading-relaxed font-medium">
+                Building technical outreach engines for high-growth B2B companies.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-12 text-xs font-bold uppercase tracking-widest text-white/80">
+              <a href="index.html#home" class="hover:text-accent transition-colors">Home</a>
+              <a href="index.html#about" class="hover:text-accent transition-colors">About Us</a>
+              <a href="services.html" class="hover:text-accent transition-colors">Services</a>
+              <a href="projects.html" class="hover:text-accent transition-colors">Projects</a>
+              <a href="index.html#contact" class="hover:text-accent transition-colors">Contact</a>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row justify-between items-center gap-8 mt-12">
+            <div class="text-xs text-white/40 font-bold uppercase tracking-widest">
+              © 2024 DiamondVilla Infrastructure. All rights reserved.
+            </div>
+            <div class="flex gap-8 text-xs font-bold uppercase tracking-widest text-white/40">
+              <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Lightbox for Projects -->
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-primary/95 backdrop-blur-xl hidden flex items-center justify-center p-4 lg:p-12 opacity-0 transition-opacity duration-500">
+      <button onclick="closeLightbox()" class="absolute top-8 right-8 text-white text-4xl hover:text-accent transition-colors cursor-pointer">
+        <iconify-icon icon="lucide:x"></iconify-icon>
+      </button>
+      <div class="max-w-6xl w-full flex flex-col items-center">
+        <img id="lightbox-img" src="" alt="" class="max-h-[80vh] w-auto rounded-2xl shadow-2xl border border-white/10">
+        <h4 id="lightbox-title" class="text-white text-2xl font-bold mt-8"></h4>
+      </div>
+    </div>
+
+    <!-- Case Study Modal (Shared from Index) -->
+    <div id="caseStudyModal" class="fixed inset-0 z-[100] bg-primary/95 backdrop-blur-xl hidden flex items-center justify-center p-4 lg:p-12 opacity-0 transition-opacity duration-500">
+      <div class="bg-white max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-[2.5rem] relative">
+        <button onclick="closeCaseStudy()" class="sticky top-6 float-right mr-6 bg-muted w-12 h-12 rounded-full flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-all z-10 shadow-lg cursor-pointer">
+          <iconify-icon icon="lucide:x" class="text-2xl"></iconify-icon>
+        </button>
+        
+        <div class="p-8 lg:p-16">
+          <div class="text-[10px] font-extrabold text-accent mb-4 uppercase tracking-[0.2em]">Full Case Study Details</div>
+          <h4 class="text-4xl font-extrabold text-primary mb-8 leading-tight">Multi-Channel Outreach Automation</h4>
+          
+          <img src="/assets/case-study-1.jpg" alt="Case Study Full" class="w-full aspect-video object-cover rounded-3xl mb-12 shadow-2xl">
+          
+          <div class="grid md:grid-cols-2 gap-12 text-foreground/70 leading-relaxed text-sm">
+            <div class="space-y-6">
+              <h5 class="text-xl font-bold text-primary">The Challenge</h5>
+              <p>The client was struggling with low response rates and fragmented data across multiple outreach channels. Their primary domain was at risk due to unoptimized scaling attempts.</p>
+              <ul class="space-y-3">
+                <li class="flex items-center gap-3">
+                  <iconify-icon icon="lucide:alert-circle" class="text-accent"></iconify-icon>
+                  Poor inbox placement (under 40%)
+                </li>
+                <li class="flex items-center gap-3">
+                  <iconify-icon icon="lucide:alert-circle" class="text-accent"></iconify-icon>
+                  Manual LinkedIn prospecting (slow scaling)
+                </li>
+              </ul>
+            </div>
+            <div class="space-y-6">
+              <h5 class="text-xl font-bold text-primary">The Solution</h5>
+              <p>We implemented a unified technical system that synchronized email and LinkedIn touchpoints, protected by a sharded infrastructure.</p>
+              <ul class="space-y-3">
+                <li class="flex items-center gap-3">
+                  <iconify-icon icon="lucide:check-circle-2" class="text-accent"></iconify-icon>
+                  15 Dedicated Outreach Domains
+                </li>
+                <li class="flex items-center gap-3">
+                  <iconify-icon icon="lucide:check-circle-2" class="text-accent"></iconify-icon>
+                  Automated CRM Sync & Enrichment
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="mt-16 pt-12 border-t border-border flex flex-col items-center text-center">
+            <h5 class="text-2xl font-extrabold text-primary mb-8">Ready for similar results?</h5>
+            <a href="index.html#contact" class="bg-accent text-white px-12 py-5 rounded-2xl font-bold hover:shadow-2xl hover:shadow-accent/30 transition-all text-lg">
+              Book Your Technical Audit
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openLightbox(imgSrc, title) {
+        const lightbox = document.getElementById('lightbox');
+        const img = document.getElementById('lightbox-img');
+        const titleEl = document.getElementById('lightbox-title');
+        
+        img.src = imgSrc;
+        titleEl.textContent = title;
+        
+        lightbox.classList.remove('hidden');
+        setTimeout(() => {
+          lightbox.classList.add('flex');
+          lightbox.classList.remove('opacity-0');
+          lightbox.classList.add('opacity-100');
+        }, 10);
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        lightbox.classList.add('opacity-0');
+        lightbox.classList.remove('opacity-100');
+        setTimeout(() => {
+          lightbox.classList.add('hidden');
+          lightbox.classList.remove('flex');
+        }, 500);
+        document.body.style.overflow = '';
+      }
+
+      function openCaseStudy() {
+        const modal = document.getElementById('caseStudyModal');
+        modal.classList.remove('hidden');
+        setTimeout(() => {
+          modal.classList.add('flex');
+          modal.classList.remove('opacity-0');
+          modal.classList.add('opacity-100');
+        }, 10);
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeCaseStudy() {
+        const modal = document.getElementById('caseStudyModal');
+        modal.classList.add('opacity-0');
+        modal.classList.remove('opacity-100');
+        setTimeout(() => {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }, 500);
+        document.body.style.overflow = '';
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeLightbox();
+          closeCaseStudy();
+        }
+      });
+    </script>
+  </body>
+</html>
